@@ -1,3 +1,4 @@
+
 .l-header {
     display: flex;
     justify-content: center;
@@ -6,6 +7,8 @@
     border-bottom: 1px solid #93A0A7;
     position: fixed;
     z-index: 1;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .l-header__layout {
@@ -13,7 +16,7 @@
     justify-content: space-between;
     padding: 30px 0;
     width: 100%;
-
+    
     .brand-name {
         a {
             display: block;
@@ -22,7 +25,6 @@
             font-weight: 900;
             text-decoration: none;
             color: $white;
-
         }
     }
 
@@ -32,27 +34,28 @@
         align-items: center;
         flex-direction: row;
 
-        a {
-            padding: 20px;
-        }
+        
 
         nav {
-
+            
             ul {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
-
+                
                 li {
                     a {
                         @include nav;
                         text-decoration: none;
                         color: $white;
                         font-size: 16px;
-                        padding: 20px;
+                        padding: 15px;
                     }
                 }
             }
         }
+    }
+    .l-header__search{
+        padding-left: 15px;
     }
 }
