@@ -5,3 +5,13 @@ $grayone: #2B313C;
 $greytwo: #1F242E;
 $greythree: #12151B;
 $white: #fff;
+$whitetwo :#DFDFDF;
+$date: #757D8C;
+
+@mixin primaryfont-1{
+    font-family: 'Muli';
+}
+
+@mixin primaryfont-2{
+    font-family: 'Archivo Black';
+}

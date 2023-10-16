@@ -1,0 +1,22 @@
+.c-bloc__title {
+    width: 600px;
+    margin-bottom: 60px;
+
+    h1 {
+        color: $white;
+        font-size: 42px;
+        font-family: sans-serif;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        display: block;
+        text-align: center;
+        color: $white;
+        font-family: muli, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../object/utility/variable';
+@import '../foundation/font';
+
+
+.l-header{
+    width: 100%;
+}
+
+.l-header__layout{
+    display: flex;
+    justify-content: space-between;
+    .brand-name{
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
