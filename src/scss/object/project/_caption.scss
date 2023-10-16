@@ -1,0 +1,42 @@
+.p-bloc--caption {
+
+    height: 300px;
+    // background-color: #f00;
+
+    // padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+    .caption {
+
+        position: absolute;
+        left: 50%;
+        top: -30%;
+        transform: translate(-50%);
+        text-align: center;
+
+
+        background: url(../img/radio.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 800px;
+        height: 400px;
+        position: absolute;
+
+        -webkit-background-clip: text;
+
+
+        h1 {
+            color: transparent;
+            font-size: 200px;
+            font-family: "Archivo Black";
+            line-height: 500px;
+            letter-spacing: 1.3;
+        }
+
+
+    }
+
+}
