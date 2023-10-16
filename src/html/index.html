@@ -11,7 +11,7 @@
 <body>
     <div class="prj-warp">
         <header class="l-header">
-            <div class="l-header__layout l-warp-inner">
+            <div class="l-header__layout l-wrap-inner">
                 <h1 class="brand-name">
                     <a href="">Radio.</a>
                 </h1>
@@ -45,8 +45,8 @@
     </div>
 
     <article class="l-content">
-        <div class="l-warp-inner">
-            <section class="p-bloc--about">
+        <section class="p-bloc p-bloc--about ">
+            <div class="l-wrap-inner">
                 <div class="about-bloc">
                     <h2>About Us</h2>
                     
@@ -75,21 +75,21 @@
                     <div class="c-btn"><a href="#" target="_self">Read More</a></div>
                 </div>
                 <div class="about-image">
-                    <img src="/src/img/aboutus.png" alt="traveller">
+                    <img src="../img/aboutus.png" alt="traveller">
                 </div>
-            </section>
-              
-    
-    
-            <section class="p-bloc--places">
+            </div>
+        </section>
+
+        <section class="p-bloc p-bloc--places">
+            <div class="l-wrap-inner">
                 <div class="p-bloc__title">
                     <h1>Discover the most engaging places</h1>
                     <p>let's see the world with us with you and your family</p>
                 </div>
-                <div class="p-bloc--card">
-                    <div class="p-bloc--card__inner">
+                <div class="card">
+                    <div class="card__inner">
                         <div class="card-img">
-                            <img src="/src/img/norway.png" alt="Norway">
+                            <img src="../img/norway.png" alt="Norway">
                         </div>
                         <div class="card-txt">
                             <div class="card-txt__inner">
@@ -100,10 +100,10 @@
                         </div>
                     </div>
 
-                    <div class="p-bloc--card__inner">
+                    <div class="card__inner">
                         <div class=".p-bloc--london">
                         <div class="card-img">
-                            <img src="/src/img/london.png" alt="London">
+                            <img src="../img/london.png" alt="London">
                         </div>
                         <div class="card-txt">
                             <div class="card-txt__inner">
@@ -115,9 +115,9 @@
                     </div>
                     </div>
 
-                    <div class="p-bloc--card__inner">
+                    <div class="card__inner">
                         <div class="card-img">
-                            <img src="/src/img/japan.png" alt="Japan">
+                            <img src="../img/japan.png" alt="Japan">
                         </div>
                         <div class="card-txt">
                             <div class="card-txt__inner">
@@ -128,54 +128,56 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
-            <section class="p-bloc p-bloc--tips">
-                <div class="c-bloc__title">
-                    <h1>Latest on the Blogs</h1>
-                    <p>We want to help you to travel better</p>
+        <section class="p-bloc p-bloc--tips">
+            <div class="c-bloc__title">
+                <h1>Latest on the Blogs</h1>
+                <p>We want to help you to travel better</p>
+            </div>
+            <div class="p-bloc__info">
+
+                <div class="p-bloc__info__inner">
+                    <div class="imgbox">
+                        <img src="../img/tip1.png" alt="tip1">
+                    </div>
+                    <div class="txtbox">
+                        <p>10 Mistakes every first time traveller will make and how to avoid them!</p>
+                    </div>
                 </div>
-                <div class="p-bloc__info">
 
-                    <div class="p-bloc__info__inner">
-                        <div class="imgbox">
-                            <img src="../img/tip1.png" alt="tip1">
-                        </div>
-                        <div class="txtbox">
-                            <p>10 Mistakes every first time traveller will make and how to avoid them!</p>
-                        </div>
+                <div class="p-bloc__info__inner">
+                    <div class="imgbox">
+                        <img src="../img/tip2.png" alt="tip2">
                     </div>
-
-                    <div class="p-bloc__info__inner">
-                        <div class="imgbox">
-                            <img src="../img/tip2.png" alt="tip2">
-                        </div>
-                        <div class="txtbox">
-                            <p>What's is really like to move to a country where you don't speak the language?</p>
-                        </div>
+                    <div class="txtbox">
+                        <p>What's is really like to move to a country where you don't speak the language?</p>
                     </div>
-                    <div class="p-bloc__info__inner">
-                        <div class="imgbox">
-                            <img src="../img/tip3.png" alt="tip3">
-                        </div>
-                        <div class="txtbox">
-                            <p>Esploring the quiet corners of Oslo | gallop around the globe.</p>
-                        </div>
-                    </div>
-                    <div class="p-bloc__info__inner">
-                        <div class="imgbox">
-                            <img src="../img/tip4.png" alt="tip4">
-                        </div>
-                        <div class="txtbox">
-                            <p>11 things to know before you visit rainbow mountain in Peru.</p>
-                        </div>
-                    </div>
-                    
                 </div>
-            </section>
+                <div class="p-bloc__info__inner">
+                    <div class="imgbox">
+                        <img src="../img/tip3.png" alt="tip3">
+                    </div>
+                    <div class="txtbox">
+                        <p>Esploring the quiet corners of Oslo | gallop around the globe.</p>
+                    </div>
+                </div>
+                <div class="p-bloc__info__inner">
+                    <div class="imgbox">
+                        <img src="../img/tip4.png" alt="tip4">
+                    </div>
+                    <div class="txtbox">
+                        <p>11 things to know before you visit rainbow mountain in Peru.</p>
+                    </div>
+                </div>
                 
-            <section class="p-bloc p-bloc--journal">
+            </div>
+        </section>
+            
+        <section class="p-bloc p-bloc--journal">
+            <div class="l-wrap-inner">
                 <div class="c-bloc__title">
                     <h1>The Travel Journals</h1>
                     <p>A Journal is a place to record new things you have discovered while exploring various places you visit.</p>
@@ -294,8 +296,10 @@
                             </div>
                         </div>
                     </div>
-            </section>
-        </div>
+                </div>
+            </div>
+        </section>
+        
 
     </article>
 

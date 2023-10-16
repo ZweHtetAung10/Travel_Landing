@@ -21,11 +21,11 @@
         }
     }
 
-    .p-bloc--card{
+    .card{
         display: flex;
         justify-content: space-around;
 
-        .p-bloc--card__inner{
+        &__inner{
             width: 340px;
 
             .p-bloc--london{
