@@ -1,5 +1,6 @@
 
 //foundation//
+@import '../scss/foundation/variable';
 @import '../scss/foundation/reset';
 @import '../scss/foundation/font';
 
@@ -9,7 +10,6 @@
 
 //object//
 @import '../scss/object/project/main-visual';
-@import '../scss/object/utility/variable';
 @import '../scss/object/project/bloc';
 @import '../scss/object/component/title';
 @import '../scss/object/project/about';

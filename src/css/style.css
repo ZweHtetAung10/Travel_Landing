@@ -4,8 +4,6 @@
 */
 @import url("https://fonts.cdnfonts.com/css/muli");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:wght@700&family=Roboto&display=swap");
-@import url("https://fonts.cdnfonts.com/css/muli");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:wght@700&family=Roboto&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,6 +78,7 @@ body {
 }
 
 .p-bloc {
+  padding: 0 30px;
   width: 100%;
 }
 
