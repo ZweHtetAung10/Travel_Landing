@@ -1,0 +1,55 @@
+.contact-bloc{
+    background-color: rgb(238, 173, 88);
+
+    width: 100%;
+
+    .contact-bloc__inner{
+        display: flex;        
+        width: 80%;
+        margin: 0 auto;
+
+
+    .text-box{
+        width: 50%;
+
+
+        h2{
+            color: $white;
+            font-size: 34px;
+            font-weight: 600;
+        }
+
+        p{
+            color: $white;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+   
+
+        .contact-box{
+            width: 50%;
+           
+
+            .contact-box__inner{
+
+                .text-box{
+
+                
+
+                h3{
+                    color: $white;
+                    font-size: 34px;
+                    font-weight: 600;
+                }
+
+                p{
+                    color: $white;
+
+                }
+            }
+        }
+    }
+}
+}
