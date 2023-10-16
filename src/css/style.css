@@ -99,6 +99,9 @@ table {
   font-size: 16px;
   padding: 15px;
 }
+.l-header__layout .l-header__search {
+  padding-left: 15px;
+}
 
 .l-wrap-inner {
   max-width: 1200px;
@@ -292,7 +295,7 @@ body {
 .p-bloc--places .card__inner .card-txt {
   padding-left: 30px;
   position: absolute;
-  bottom: -80px;
+  bottom: -150px;
   width: 250px;
 }
 .p-bloc--places .card__inner .card-txt .card-txt__inner h2 {
