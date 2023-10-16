@@ -1,0 +1,76 @@
+.p-bloc--places{
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+    .p-bloc__title{
+        text-align: center;
+        margin-bottom: 60px;
+
+        h1{
+            color: $white;  
+            font-size: 42px;
+            font-weight: 600;   
+            margin-bottom: 30px;   
+        }
+
+        p{
+            color: $white;  
+            font-size: 16px;
+            font-weight: 400;       
+        }
+    }
+
+    .p-bloc--card{
+        display: flex;
+        justify-content: space-around;
+
+        .p-bloc--card__inner{
+            width: 340px;
+
+            .p-bloc--london{
+               margin-bottom: -60px;
+            }
+
+            .card-img{
+                width: 340px;
+                height: 497px;
+            }
+
+            .card-txt{
+                width: 340px;
+                margin-top: -90px;
+                
+                .card-txt__inner{
+                    padding: 0 30px;
+                
+
+                h2{
+                    color: $secondary;
+                    font-size: 34px;
+                    font-weight: 600;  
+                    margin-bottom: 12px;    
+                 }
+
+                p{
+                    color: $white;
+                    width: 250px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 60px;
+                }
+
+                .c-btn{
+
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                        border: 1.5px solid $white;
+                        padding: 15px 20px;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
