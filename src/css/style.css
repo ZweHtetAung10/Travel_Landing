@@ -180,4 +180,136 @@ body {
   font-family: muli, sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+.l-content {
+  background-color: #0A0D13;
+  width: 1440;
+}
+.l-content .p-bloc--about {
+  margin-bottom: 120px;
+  position: relative;
+}
+.l-content .p-bloc--about .about-bloc {
+  width: 835px;
+  height: 454px;
+  padding: 113px;
+  position: absolute;
+}
+.l-content .p-bloc--about .about-bloc h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.l-content .p-bloc--about .about-bloc .text-box {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 60px;
+  width: 466px;
+}
+.l-content .p-bloc--about .about-bloc .record-box {
+  width: 835px;
+  height: 148;
+  background-color: #1F242E;
+  margin-bottom: 59px;
+}
+.l-content .p-bloc--about .about-bloc .record-box .record-box__inner {
+  padding: 25px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 680px;
+  height: 86px;
+  align-items: center;
+}
+.l-content .p-bloc--about .about-bloc .record-box .record-box__inner .record {
+  text-align: center;
+  height: 100%;
+}
+.l-content .p-bloc--about .about-bloc .record-box .record-box__inner .record h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  margin: 10px;
+}
+.l-content .p-bloc--about .about-bloc .record-box .record-box__inner .record p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.l-content .p-bloc--about .about-image {
+  padding-left: 758px;
+}
+.l-content .p-bloc--about .about-image img {
+  width: 712px;
+  height: 680px;
+}
+.l-content .p-bloc--about .c-btn a {
+  background-color: #F49F0A;
+  padding: 15px 36px;
+  text-decoration: none;
+  color: #0A0D13;
+}
+
+.p-bloc--places {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.p-bloc--places .p-bloc__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.p-bloc--places .p-bloc__title h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.p-bloc--places .p-bloc__title p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.p-bloc--places .p-bloc--card {
+  display: flex;
+  justify-content: space-around;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner {
+  width: 340px;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner .p-bloc--london {
+  margin-bottom: -60px;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner .card-img {
+  width: 340px;
+  height: 497px;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner .card-txt {
+  width: 340px;
+  margin-top: -90px;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner .card-txt .card-txt__inner {
+  padding: 0 30px;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner .card-txt .card-txt__inner h2 {
+  color: #F49F0A;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner .card-txt .card-txt__inner p {
+  color: #fff;
+  width: 250px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.p-bloc--places .p-bloc--card .p-bloc--card__inner .card-txt .card-txt__inner .c-btn a {
+  color: #fff;
+  text-decoration: none;
+  border: 1.5px solid #fff;
+  padding: 15px 20px;
 }/*# sourceMappingURL=style.css.map */
