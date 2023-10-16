@@ -1,75 +1,72 @@
-.p-bloc--places{
-    width: 1160px;
+.p-bloc--places {
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 200px;
 
-    .p-bloc__title{
+    .p-bloc__title {
         text-align: center;
         margin-bottom: 60px;
 
-        h1{
-            color: $white;  
+        h1 {
+            color: $white;
             font-size: 42px;
-            font-weight: 600;   
-            margin-bottom: 30px;   
+            font-weight: 600;
+            margin-bottom: 30px;
         }
 
-        p{
-            color: $white;  
+        p {
+            color: $white;
             font-size: 16px;
-            font-weight: 400;       
+            font-weight: 400;
         }
     }
 
-    .card{
+    .card {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        position: relative;
 
-        &__inner{
-            width: 340px;
+        &__inner {
+            
 
-            .p-bloc--london{
-               margin-bottom: -60px;
+            .card-img {
+                width: 100%;
             }
 
-            .card-img{
-                width: 340px;
-                height: 497px;
-            }
+            .card-txt {
+                padding-left: 30px;
+                position: absolute;
+                bottom: -80px;
+                width: 250px;
 
-            .card-txt{
-                width: 340px;
-                margin-top: -90px;
-                
-                .card-txt__inner{
-                    padding: 0 30px;
-                
+                .card-txt__inner {
 
-                h2{
-                    color: $secondary;
-                    font-size: 34px;
-                    font-weight: 600;  
-                    margin-bottom: 12px;    
-                 }
+                    
+                    h2 {
+                        color: $secondary;
+                        font-size: 34px;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                    }
 
-                p{
-                    color: $white;
-                    width: 250px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    margin-bottom: 60px;
-                }
+                    p {
+                        color: $white;
 
-                .c-btn{
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 60px;
+                    }
 
-                    a{
+
+                    a {
                         color: $white;
                         text-decoration: none;
                         border: 1.5px solid $white;
                         padding: 15px 20px;
                     }
+
+
                 }
-            }
             }
         }
     }
