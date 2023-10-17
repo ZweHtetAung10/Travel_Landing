@@ -1,3 +1,7 @@
+.inform{
+    padding-bottom: 100px;
+}
+
 .radio-txt{
     width: 50%;
     margin: 0 auto;
@@ -25,14 +29,14 @@
        margin-bottom: 30px;
     //    align-items: center;
     //    text-align: center;
-    //    justify-content: center;
+        display: flex;
+        justify-content: center;
+       
 
-    //     img{
-    //         margin: 0 10px;
-    //     ;
-    //     }
+    
        ul{ 
         display: flex;
+        margin: 0 auto;
         
         li{
             
@@ -54,6 +58,7 @@
 
     width: 60%;
     margin: 0 auto;
+    // margin-bottom: 40px;
 
     ul{
         display: flex;
@@ -69,5 +74,12 @@
         }
     }
                
+}
+
+.f-address{
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #fff;
+    padding: 40px 0;
 }
 
