@@ -55,16 +55,49 @@ table {
 }
 
 .l-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  border-bottom: 1px solid #93A0A7;
+  position: fixed;
+  z-index: 1;
 }
 
 .l-header__layout {
   display: flex;
   justify-content: space-between;
+  padding: 30px 0;
+  width: 100%;
 }
 .l-header__layout .brand-name a {
+  display: block;
+  font-size: 22px;
+  font-family: "Poppins";
+  font-weight: 900;
   text-decoration: none;
   color: #fff;
+}
+.l-header__layout .l-header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.l-header__layout .l-header__list a {
+  padding: 20px;
+}
+.l-header__layout .l-header__list nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.l-header__layout .l-header__list nav ul li a {
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
 }
 
 .l-wrap-inner {
@@ -72,38 +105,83 @@ table {
   margin: 0 auto;
 }
 
+.main-visual {
+  width: 100%;
+  height: 905px;
+  background-image: url(../img/mainvisual.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-visual__txt {
+  width: 1200px;
+}
+.main-visual__txt h2 {
+  display: block;
+  font-family: sans-serif;
+  font-weight: 800;
+  width: 635px;
+  font-size: 64px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.main-visual__txt p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "muli";
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.main-visual__txt p .stick {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  transform: rotate(180 deg);
+  position: relative;
+}
+.main-visual__txt p .stick::before {
+  content: "";
+  display: block;
+  width: 40px;
+  border: 1px solid #fff;
+  position: absolute;
+  background: red;
+  top: 5px;
+  left: 0;
+}
+
 body {
   background-color: #0A0D13;
-  height: 3000px;
 }
 
 .p-bloc {
-  padding: 0 30px;
   width: 100%;
 }
 
 .p-bloc--tips {
   margin-bottom: 70px;
 }
-.p-bloc--tips .p-bloc__info {
+.p-bloc--tips .info {
   width: 100%;
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.p-bloc--tips .p-bloc__info__inner {
+.p-bloc--tips .info__inner {
   width: 25%;
 }
-.p-bloc--tips .p-bloc__info__inner .imgbox img {
+.p-bloc--tips .info__inner .imgbox img {
   width: 100%;
   opacity: 60%;
 }
-.p-bloc--tips .p-bloc__info__inner .txtbox {
+.p-bloc--tips .info__inner .txtbox {
   width: 280px;
   position: absolute;
   bottom: 0;
 }
-.p-bloc--tips .p-bloc__info__inner .txtbox p {
+.p-bloc--tips .info__inner .txtbox p {
   padding: 10px;
   color: #fff;
   font-size: 18px;
@@ -180,77 +258,6 @@ body {
   font-family: muli, sans-serif;
   font-size: 16px;
   line-height: 20px;
-}
-
-.l-content {
-  background-color: #0A0D13;
-  width: 1440;
-}
-.l-content .p-bloc--about {
-  margin-bottom: 120px;
-  position: relative;
-}
-.l-content .p-bloc--about .about-bloc {
-  width: 835px;
-  height: 454px;
-  padding: 113px;
-  position: absolute;
-}
-.l-content .p-bloc--about .about-bloc h2 {
-  color: #fff;
-  font-size: 42px;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-.l-content .p-bloc--about .about-bloc .text-box {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  padding-bottom: 60px;
-  width: 466px;
-}
-.l-content .p-bloc--about .about-bloc .record-box {
-  width: 835px;
-  height: 148;
-  background-color: #1F242E;
-  margin-bottom: 59px;
-}
-.l-content .p-bloc--about .about-bloc .record-box .record-box__inner {
-  padding: 25px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 680px;
-  height: 86px;
-  align-items: center;
-}
-.l-content .p-bloc--about .about-bloc .record-box .record-box__inner .record {
-  text-align: center;
-  height: 100%;
-}
-.l-content .p-bloc--about .about-bloc .record-box .record-box__inner .record h3 {
-  color: #fff;
-  font-size: 42px;
-  font-weight: 600;
-  margin: 10px;
-}
-.l-content .p-bloc--about .about-bloc .record-box .record-box__inner .record p {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-}
-.l-content .p-bloc--about .about-image {
-  padding-left: 758px;
-}
-.l-content .p-bloc--about .about-image img {
-  width: 712px;
-  height: 680px;
-}
-.l-content .p-bloc--about .c-btn a {
-  background-color: #F49F0A;
-  padding: 15px 36px;
-  text-decoration: none;
-  color: #0A0D13;
 }
 
 .p-bloc--places {
@@ -340,6 +347,7 @@ body {
   font-size: 200px;
   font-family: "Archivo Black";
   line-height: 500px;
+  letter-spacing: 1.3;
 }
 
 .carousel {
