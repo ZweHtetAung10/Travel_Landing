@@ -1,0 +1,84 @@
+.p-bloc--contact {
+    // display: flex;
+    // padding-top: 200px;
+
+
+}
+
+.contact {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contact__txt {
+
+        width: 40%;
+      
+        
+
+        h4 {
+            color: #fff;
+            font-family: "Playfair Display";
+            font-size: 34px;
+            text-decoration: none;
+            margin-bottom: 40px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        p {
+            color: #fff;
+            font-family: "Muli";
+            font-size: 18;
+            text-decoration: none;
+
+
+        }
+    }
+
+    .contact__address {
+
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        text-align: center;
+
+        .circle {
+
+            width: 278px;
+            height: 278px;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 100% 100%;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .circle-txt {
+                
+
+                 padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+             }
+            
+            
+            p {
+                font-family: "Muli";
+                font-size: 24px;
+
+            }
+
+            .online {
+                font-size: 16px;
+            }
+        }
+
+
+    }
+
+}
