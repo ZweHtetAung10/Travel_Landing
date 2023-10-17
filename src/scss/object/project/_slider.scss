@@ -1,0 +1,84 @@
+.carousel{
+    width: 100%;
+    
+}
+
+.slider{
+
+    margin: 0 auto;
+
+    position: relative;
+
+    .items{
+        width: calc(100%/5);
+        height: 300px;
+        margin: 10px;
+
+        position: relative;
+
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.4s linear;
+        }
+
+        .overlay{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            opacity: 0;
+        }
+    }
+
+}
+
+.overlay h5,.overlay p{
+    color: #fff;
+}
+
+.overlay{
+
+    transition: all .5s linear;
+
+    h5{
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+.slider .items.slick-center img{
+    transform: scale(1.2);
+}
+
+.slider .items.slick-center .overlay{
+    left: 0;
+    top: 80%;
+    opacity: 1;
+}
+
+
+.slick-arrow{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 10;
+}
+
+.slick-prev{
+    left: 0;
+}
+
+.slick-next{
+    right: 0;
+}
+
