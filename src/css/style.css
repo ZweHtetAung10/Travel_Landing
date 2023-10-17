@@ -62,6 +62,9 @@ table {
   border-bottom: 1px solid #93A0A7;
   position: fixed;
   z-index: 1;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .l-header__layout {
@@ -84,9 +87,6 @@ table {
   align-items: center;
   flex-direction: row;
 }
-.l-header__layout .l-header__list a {
-  padding: 20px;
-}
 .l-header__layout .l-header__list nav ul {
   display: flex;
   justify-content: space-between;
@@ -97,7 +97,10 @@ table {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  padding: 20px;
+  padding: 15px;
+}
+.l-header__layout .l-header__search {
+  padding-left: 15px;
 }
 
 .l-wrap-inner {
@@ -114,6 +117,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .main-visual__txt {
   width: 1200px;
@@ -261,7 +265,7 @@ body {
 }
 
 .p-bloc--places {
-  width: 1160px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 200px;
 }
@@ -282,24 +286,17 @@ body {
 }
 .p-bloc--places .card {
   display: flex;
-  justify-content: space-around;
-}
-.p-bloc--places .card__inner {
-  width: 340px;
-}
-.p-bloc--places .card__inner .p-bloc--london {
-  margin-bottom: -60px;
+  justify-content: space-between;
+  position: relative;
 }
 .p-bloc--places .card__inner .card-img {
-  width: 340px;
-  height: 497px;
+  width: 100%;
 }
 .p-bloc--places .card__inner .card-txt {
-  width: 340px;
-  margin-top: -90px;
-}
-.p-bloc--places .card__inner .card-txt .card-txt__inner {
-  padding: 0 30px;
+  padding-left: 30px;
+  position: absolute;
+  bottom: -150px;
+  width: 250px;
 }
 .p-bloc--places .card__inner .card-txt .card-txt__inner h2 {
   color: #F49F0A;
@@ -309,12 +306,11 @@ body {
 }
 .p-bloc--places .card__inner .card-txt .card-txt__inner p {
   color: #fff;
-  width: 250px;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 60px;
 }
-.p-bloc--places .card__inner .card-txt .card-txt__inner .c-btn a {
+.p-bloc--places .card__inner .card-txt .card-txt__inner a {
   color: #fff;
   text-decoration: none;
   border: 1.5px solid #fff;
