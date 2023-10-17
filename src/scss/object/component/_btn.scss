@@ -1,0 +1,40 @@
+.c-btn{
+
+    max-width: 150px;
+    background: $secondary;
+
+    a{
+        color: #000;
+        display: block;
+        text-decoration: none;
+        padding: 20px 10px 20px 40px;
+        width: 100%;
+        border: 1px solid $secondary;
+        font-family: "Muli";
+        font-size: 16px;
+
+        position: relative;
+    }
+
+    .arrow{
+        display: block;
+        background-color: $warning;
+        padding: 0 15px;
+        height: 100%;
+        line-height: 55px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+.c-btn--discover{
+    background: transparent;
+
+    .arrow{
+        background-color: transparent;
+        line-height: 55px;
+    }   
+}

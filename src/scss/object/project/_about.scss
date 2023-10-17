@@ -1,21 +1,19 @@
 
-    .l-content{
-        background-color: $primary;
-        width:1440;
 
-        
 
             .p-bloc--about{
-                    margin-bottom: 120px;
+                    width: 100%;
+                    margin-bottom: 120px;                     
+                    overflow: hidden;
+                    display: flex;  
                     position: relative;
-                    
-                    
+                    flex-direction: row-reverse;  
+                    height: 783px;  
+                    align-items: center;   
                     
                     .about-bloc{
-                        width: 835px;
-                        height: 454px;
-                        padding: 113px;
-                        position: absolute;
+                        margin: 0 auto;
+                         width: 1200px;
 
                             h2{
                                 color: $white;
@@ -36,15 +34,16 @@
                             }
 
                             .record-box{
-                                width: 835px;
-                                height: 148;
+                                height: 148px;
                                 background-color: $greytwo;
                                 margin-bottom: 59px;
+                                width: 65%;
                                
                                 
 
                                 .record-box__inner{
-                                    padding: 25px;
+                                   
+                                     padding: 25px 0;
                                     margin: 0 auto;
                                     display: flex;
                                     justify-content: space-between;
@@ -53,11 +52,29 @@
                                     align-items: center;
                                     
                                     
-                                    
-
                                     .record{
+                                        width: calc(100%/3);
                                         text-align: center;
                                         height: 100%;
+
+                                        position: relative;
+
+                                        &::after{
+                                            content: '';
+                                            width: 1px;
+                                            height: 50%;
+                                            background-color: #bbb;
+
+                                            position: absolute;
+                                            right: 0;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+
+                                        }
+
+                                        &:last-child::after{
+                                            width: 0;
+                                        }
                                         
                                       
                                         h3{
@@ -79,11 +96,13 @@
                            
                     }
                     .about-image{
-                        padding-left: 758px;
+                        width: 50%;
+                        position: absolute;
+                        z-index: -1;
 
                         img{
-                            width: 712px;
-                            height: 680px;
+                            width: 100%;
+                            
                             
                         }
                     }
@@ -99,7 +118,6 @@
                         }
                     }
         }
-    }
     
 
     

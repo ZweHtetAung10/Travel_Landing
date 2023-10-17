@@ -5,13 +5,13 @@
 @import '../scss/foundation/font';
 
 //layout//
-@import '../scss/layout/header';
+ @import '../scss/layout/header';
 @import '../scss/layout/layout';
 
 //object//
-@import '../scss/object/project/main-visual';
+ @import '../scss/object/project/main-visual';
 @import '../scss/object/project/bloc';
 @import '../scss/object/component/title';
 @import '../scss/object/project/about';
 @import '../scss/object/project/places';
-// @import '../scss/object/project/contact.scss';
+@import "../scss/object/component/btn"
