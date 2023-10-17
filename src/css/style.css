@@ -324,8 +324,94 @@ body {
   line-height: 20px;
 }
 
-.p-bloc--places {
+.p-bloc--about {
   width: 100%;
+  margin-bottom: 120px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  height: 783px;
+  align-items: center;
+}
+.p-bloc--about .about-bloc {
+  margin: 0 auto;
+  width: 1200px;
+}
+.p-bloc--about .about-bloc h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.p-bloc--about .about-bloc .text-box {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 60px;
+  width: 466px;
+}
+.p-bloc--about .about-bloc .record-box {
+  height: 148px;
+  background-color: #1F242E;
+  margin-bottom: 59px;
+  width: 65%;
+}
+.p-bloc--about .about-bloc .record-box .record-box__inner {
+  padding: 25px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 680px;
+  height: 86px;
+  align-items: center;
+}
+.p-bloc--about .about-bloc .record-box .record-box__inner .record {
+  width: 33.3333333333%;
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.p-bloc--about .about-bloc .record-box .record-box__inner .record::after {
+  content: "";
+  width: 1px;
+  height: 50%;
+  background-color: #bbb;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.p-bloc--about .about-bloc .record-box .record-box__inner .record:last-child::after {
+  width: 0;
+}
+.p-bloc--about .about-bloc .record-box .record-box__inner .record h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  margin: 10px;
+}
+.p-bloc--about .about-bloc .record-box .record-box__inner .record p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.p-bloc--about .about-image {
+  width: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.p-bloc--about .about-image img {
+  width: 100%;
+}
+.p-bloc--about .c-btn a {
+  background-color: #F49F0A;
+  padding: 15px 36px;
+  text-decoration: none;
+  color: #0A0D13;
+}
+
+.p-bloc--places {
   margin: 0 auto;
   margin-bottom: 200px;
 }
@@ -345,32 +431,66 @@ body {
   font-weight: 400;
 }
 .p-bloc--places .card {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  position: relative;
+  justify-content: flex-start;
+}
+.p-bloc--places .card__inner {
+  width: 33.3333333333%;
+  margin-right: 50px;
+}
+.p-bloc--places .card__inner:last-child {
+  margin-right: 0;
+}
+.p-bloc--places .card__inner:nth-of-type(2) {
+  margin-top: 50px;
+}
+.p-bloc--places .card__inner .p-bloc--london {
+  margin-bottom: -60px;
 }
 .p-bloc--places .card__inner .card-img {
   width: 100%;
+  height: 497px;
+  position: relative;
+}
+.p-bloc--places .card__inner .card-img img {
+  width: 100%;
+  height: 100%;
+}
+.p-bloc--places .card__inner .card-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.925));
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .p-bloc--places .card__inner .card-txt {
-  padding-left: 30px;
-  position: absolute;
-  bottom: -150px;
-  width: 250px;
+  width: 340px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 1;
+}
+.p-bloc--places .card__inner .card-txt .card-txt__inner {
+  padding: 0 30px;
 }
 .p-bloc--places .card__inner .card-txt .card-txt__inner h2 {
   color: #F49F0A;
+  font-family: "Muli";
   font-size: 34px;
   font-weight: 600;
   margin-bottom: 12px;
 }
 .p-bloc--places .card__inner .card-txt .card-txt__inner p {
   color: #fff;
+  width: 250px;
+  font-family: "Muli";
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
-.p-bloc--places .card__inner .card-txt .card-txt__inner a {
+.p-bloc--places .card__inner .card-txt .card-txt__inner .c-btn a {
   color: #fff;
   text-decoration: none;
   border: 1.5px solid #fff;
@@ -622,4 +742,39 @@ body {
 }
 .contact .contact__address .circle .online {
   font-size: 16px;
+}
+
+.c-btn {
+  max-width: 150px;
+  background: #F49F0A;
+}
+.c-btn a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  padding: 20px 10px 20px 40px;
+  width: 100%;
+  border: 1px solid #F49F0A;
+  font-family: "Muli";
+  font-size: 16px;
+  position: relative;
+}
+.c-btn .arrow {
+  display: block;
+  background-color: #E89400;
+  padding: 0 15px;
+  height: 100%;
+  line-height: 55px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-btn--discover {
+  background: transparent;
+}
+.c-btn--discover .arrow {
+  background-color: transparent;
+  line-height: 55px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,121 @@
+
+.p-bloc--about{
+        width: 100%;
+        margin-bottom: 120px;                     
+        overflow: hidden;
+        display: flex;  
+        position: relative;
+        flex-direction: row-reverse;  
+        height: 783px;  
+        align-items: center;   
+        
+        .about-bloc{
+            margin: 0 auto;
+                width: 1200px;
+
+                h2{
+                    color: $white;
+                    font-size: 42px;
+                    font-weight: bold;
+                    padding-bottom: 30px;
+                }
+
+                .text-box{
+                    
+                    
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding-bottom: 60px;
+                    width: 466px;
+                    
+                }
+
+                .record-box{
+                    height: 148px;
+                    background-color: $greytwo;
+                    margin-bottom: 59px;
+                    width: 65%;
+                    
+                    
+
+                    .record-box__inner{
+                        
+                            padding: 25px 0;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 680px;
+                        height: 86px;
+                        align-items: center;
+                        
+                        
+                        .record{
+                            width: calc(100%/3);
+                            text-align: center;
+                            height: 100%;
+
+                            position: relative;
+
+                            &::after{
+                                content: '';
+                                width: 1px;
+                                height: 50%;
+                                background-color: #bbb;
+
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+
+                            }
+
+                            &:last-child::after{
+                                width: 0;
+                            }
+                            
+                            
+                            h3{
+                                color: $white;
+                                font-size: 42px;
+                                font-weight: 600;
+                                margin: 10px;
+                            }
+
+                            p{
+                                color: $white;
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+                
+        }
+        .about-image{
+            width: 50%;
+            position: absolute;
+            z-index: -1;
+
+            img{
+                width: 100%;
+                
+                
+            }
+        }
+        .c-btn{
+            
+
+            a{
+                background-color: $secondary;
+                
+                padding: 15px 36px;
+                text-decoration: none;
+                color: $primary
+            }
+        }
+}
+
+
+
