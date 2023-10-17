@@ -4,6 +4,8 @@
 */
 @import url("https://fonts.cdnfonts.com/css/muli");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -106,6 +108,50 @@ table {
 .l-wrap-inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.radio-txt {
+  width: 50%;
+  margin: 0 auto;
+}
+.radio-txt h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+}
+.radio-txt p {
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.radio-txt .radio-txt__icon {
+  margin-bottom: 30px;
+}
+.radio-txt .radio-txt__icon ul {
+  display: flex;
+}
+.radio-txt .radio-txt__icon ul li a img {
+  margin: 0 10px;
+}
+
+.menu {
+  width: 60%;
+  margin: 0 auto;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li a {
+  color: #fff;
+  font-family: "Muli";
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
 }
 
 .main-visual {
@@ -500,4 +546,59 @@ body {
 
 .slick-next {
   right: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .contact__txt {
+  width: 40%;
+}
+.contact .contact__txt h4 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 34px;
+  text-decoration: none;
+  margin-bottom: 40px;
+  width: 100%;
+  display: inline-block;
+}
+.contact .contact__txt p {
+  color: #fff;
+  font-family: "Muli";
+  font-size: 18;
+  text-decoration: none;
+}
+.contact .contact__address {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  text-align: center;
+}
+.contact .contact__address .circle {
+  width: 278px;
+  height: 278px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100% 100%;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact__address .circle .circle-txt {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact__address .circle p {
+  font-family: "Muli";
+  font-size: 24px;
+}
+.contact .contact__address .circle .online {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
