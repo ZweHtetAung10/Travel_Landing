@@ -2,7 +2,7 @@
     // display: flex;
     // padding-top: 200px;
 
-
+    background: linear-gradient(rgba(0,0,0,0) 70%,#eeeeee1b );
 }
 
 .contact {
@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 200px;
+    margin-bottom: 150px;
+
+    
 
     .contact__txt {
 
